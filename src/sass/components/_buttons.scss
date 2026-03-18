@@ -24,25 +24,11 @@
 /* Hero Style */
 .cta-btn--hero {
   @include supportColorForIE11();
-  border-width: 2px;
-  border-style: solid;
-  -moz-border-image: -moz-linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  -webkit-border-image: -webkit-linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  border-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  -webkit-border-image-slice: 1;
-  border-image-slice: 1;
+  border: 2px solid transparent;
+  background-image: linear-gradient($white-color, $white-color),
+    linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   @include supportIE11() {
     color: $secondary-color !important;
     &:hover {
@@ -75,6 +61,31 @@
     @include respond(phone) {
       -webkit-text-fill-color: $secondary-color;
     }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.cta-btn--ghost {
+  color: $dark-blue-text;
+  border: 2px solid rgba($dark-blue-text, 0.18);
+  background: rgba($white-color, 0.9);
+  border-radius: 999px;
+  overflow: hidden;
+
+  &::after {
+    border-radius: inherit;
+  }
+
+  &::after {
+    background: rgba($primary-color, 0.08);
+  }
+
+  &:hover {
+    color: $dark-blue-text;
+    text-decoration: none;
 
     &::after {
       width: 100%;

@@ -1,14 +1,3 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobiwave/simplefolio/
-  Readme: https://github.com/cobiwave/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -17,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Juan García-Albea | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <title>Juan Garcia-Albea | Web Developer</title>
+    <meta
+      name="keywords"
+      content="Juan Garcia-Albea, web developer, frontend developer, JavaScript, React, Vue"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Juan Garcia-Albea, a web developer building thoughtful, user-focused digital experiences."
+    />
 
     <link
       rel="stylesheet"
@@ -33,35 +25,35 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-     <!-- **** Hero Section **** -->
-     <div id="hero" class="jumbotron">
+    <div id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          <span class="text-color-main">Juan García-Albea</span>
-          <br />
-          Crafting Creative Solutions to Real-World Problems
-        <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know me</a>
-        </p>
+        <div class="hero-copy load-hidden">
+          <p class="hero-eyebrow">Web Developer</p>
+          <h1 class="hero-title">
+            <span class="text-color-main">Juan Garcia-Albea</span>
+            <br />
+            builds clear, modern web experiences.
+          </h1>
+          <p class="hero-lead">
+            Web developer focused on responsive interfaces, thoughtful UX, and
+            reliable frontend work with React, Vue, and JavaScript.
+          </p>
+          <div class="hero-cta">
+            <a class="cta-btn cta-btn--hero" href="#projects">View Projects</a>
+            <a class="cta-btn cta-btn--ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">
-          About me
-        </h2>
+        <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image">
@@ -69,24 +61,35 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
+                src="./assets/juan-photo.jpeg"
+                alt="Portrait of Juan Garcia-Albea"
               />
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                I am a Web Developer driven by a passion for solving coding challenges and learning something new every day. I thrive on building scalable software and crafting effective solutions that make a real impact.
+                I am a web developer who enjoys turning ideas into reliable,
+                easy-to-use products. I like solving real problems, learning
+                fast, and building interfaces that feel simple for the user.
               </p>
               <p class="about-wrapper__info-text">
-                With a commitment to continuous growth, I am eager to expand my skills and contribute meaningfully to the ever-evolving IT field.
+                My background includes React, Vue, JavaScript, APIs, and full
+                stack projects where I have worked across both frontend and
+                backend concerns.
               </p>
               <p class="about-wrapper__info-text">
-                Feel free to reach out to me via email anytime—I'd love to connect!
+                I am looking for opportunities where I can keep growing, work
+                with a strong team, and contribute to products that people
+                genuinely enjoy using.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="assets/JuanGarciaDevCV.pdf">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/JuanGarciaDevCV.pdf"
+                >
                   View Resume
                 </a>
               </span>
@@ -95,255 +98,335 @@
         </div>
       </div>
     </section>
-    <!-- /END About Section -->
 
-       <!-- **** Projects Section **** -->
-       <section id="projects">
-        <div class="container">
-          <div class="project-wrapper">
-            <h2 class="section-title dark-blue-text">
-              Projects
-            </h2>
-  
-             <!-- Each .row is a project -->
-             <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">Funky Clothes - E-Commerce Platform</h3>
-  
-                  <div>
-                    <p class="mb-4">
-                      Funky Clothes is a simple e-commerce platform that lets users shop seamlessly. Key features include:
-                    </p>
-                  
-                    <div class="features-list mb-4">
-                      <p><strong>Sign-up & Social Login:</strong> Quick Google sign-in via Firebase.</p>
-                      <p><strong>Product Browsing:</strong> Easy navigation with categories for faster shopping.</p>
-                      <p><strong>Cart & Checkout:</strong> Add items to the cart and pay securely via Stripe.</p>
-                      <p><strong>State Management:</strong> Managed with Redux for a smooth user experience.</p>
-                      <p><strong>Technologies Used:</strong> <span class="tech-gradient">React, Redux, Stripe, Firebase</span></p>
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+          <p class="project-wrapper__intro">
+            A selection of projects that show how I approach product thinking,
+            frontend development, and end-to-end implementation.
+          </p>
+          <div class="row project-grid">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="project-card load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://pro0930-food-my-way.onrender.com/"
+                  target="_blank"
+                  class="project-card__media"
+                >
+                  <div class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="./assets/food-my-way.png"
+                      alt="Screenshot of Food My Way"
+                    />
+                    <div class="project-card__overlay">
+                      <span class="project-card__overlay-cta">View Project</span>
                     </div>
                   </div>
-                    
-                  
-                  <a target="_blank" class="cta-btn cta-btn--hero" href="https://crwn-pro-live.herokuapp.com/">
-                    See Live
-                  </a>
-                  <a target="_blank" class="cta-btn text-color-main" href="https://github.com/juangalbea/crwn-clothing">
-                    Source Code
-                  </a>
+                </a>
+                <div class="project-card__body">
+                  <h3 class="project-wrapper__text-title">Food My Way</h3>
+                  <p class="project-wrapper__summary">
+                    A collaborative recipe customization web app where users
+                    can discover meals, review nutrition data, generate
+                    ingredient substitutions, and save personalized recipes
+                    based on dietary preferences or food goals.
+                  </p>
+                  <p class="project-wrapper__stack">
+                    HTML, CSS, JavaScript, Node.js, Express, MongoDB, OpenAI
+                  </p>
+                  <div class="project-wrapper__links">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn cta-btn--hero"
+                      href="https://pro0930-food-my-way.onrender.com/"
+                    >
+                      See Live
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/fac-32/Pro0930-Food-My-Way"
+                    >
+                      Source Code
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="project-wrapper__image">
-                  <a href="https://crwn-pro-live.herokuapp.com/" target="_blank">
-                    <div data-tilt class="thumbnail rounded">
-                      <img class="img-fluid" src="./assets/funkyclothes.png" />
-                    </div>
-                  </a>
-                </div>
-              </div>
+              </article>
             </div>
-            <!-- /END Project -->
-  
-            <!-- Each .row is a project -->
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">Who is Younger? Who is Older?</h3>
-                    <div>
-                      <p class="mb-4">
-                        "Who is Younger? Who is Older?" is an app that lets users upload a photo containing multiple faces. The app detects the faces, calculates their ages, and determines who is the youngest and who is the oldest using a visually striking gradient from magenta to dark blue.
-                      </p>
-  
-                      <div class="features-list mb-4">
-                        <p><strong>Easy Registration:</strong> Sign up to get started.</p>
-                        <p><strong>Face Detection:</strong> Upload a photo with multiple faces for automatic detection.</p>
-                        <p><strong>Age Comparison:</strong> The app identifies the youngest and oldest faces, highlighting them with a gradient scale.</p>
-                        <p><strong>Technologies Used:</strong> <span class="tech-gradient">React, PostgreSQL, Node, Express, Clarifai API</span></p>
-                      </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="project-card load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://crwn-pro-live.herokuapp.com/"
+                  target="_blank"
+                  class="project-card__media"
+                >
+                  <div class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="./assets/funkyclothes.png"
+                      alt="Screenshot of Funky Clothes"
+                    />
+                    <div class="project-card__overlay">
+                      <span class="project-card__overlay-cta">View Project</span>
                     </div>
-                  <a target="_blank" class="cta-btn cta-btn--hero" href="https://brain-detector.herokuapp.com/">
-                    See Live
-                  </a>
-                  <a target="_blank" class="cta-btn text-color-main" href="https://github.com/juangalbea/Backend-Face_Recognition">
-                    Back
-                  </a>
-                  <a target="_blank" class="cta-btn text-color-main" href="https://github.com/juangalbea/Face_Recognition">
-                    Front End
-                  </a>
+                  </div>
+                </a>
+                <div class="project-card__body">
+                  <h3 class="project-wrapper__text-title">Funky Clothes</h3>
+                  <p class="project-wrapper__summary">
+                    An e-commerce application focused on smooth browsing, secure
+                    checkout, and clear state management across the shopping
+                    flow.
+                  </p>
+                  <p class="project-wrapper__stack">
+                    React, Redux, Stripe, Firebase
+                  </p>
+                  <div class="project-wrapper__links">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn cta-btn--hero"
+                      href="https://crwn-pro-live.herokuapp.com/"
+                    >
+                      See Live
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/juangalbea/crwn-clothing"
+                    >
+                      Source Code
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="project-wrapper__image">
-                  <a href="https://brain-detector.herokuapp.com/" target="_blank">
-                    <div data-tilt class="thumbnail rounded">
-                      <img class="img-fluid" src="./assets/logoage.png" />
-                    </div>
-                  </a>
-                </div>
-              </div>
+              </article>
             </div>
-            <!-- /END Project -->
-  
-            <!-- Each .row is a project -->
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <div class="project-wrapper__text">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="project-card load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://brain-detector.herokuapp.com/"
+                  target="_blank"
+                  class="project-card__media"
+                >
+                  <div class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="./assets/logoage.png"
+                      alt="Screenshot of the face comparison project"
+                    />
+                    <div class="project-card__overlay">
+                      <span class="project-card__overlay-cta">View Project</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="project-card__body">
+                  <h3 class="project-wrapper__text-title">
+                    Who Is Younger? Who Is Older?
+                  </h3>
+                  <p class="project-wrapper__summary">
+                    A face analysis app that detects multiple people in an image
+                    and compares their ages using a custom visual feedback
+                    system.
+                  </p>
+                  <p class="project-wrapper__stack">
+                    React, Node.js, Express, PostgreSQL, Clarifai API
+                  </p>
+                  <div class="project-wrapper__links">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn cta-btn--hero"
+                      href="https://brain-detector.herokuapp.com/"
+                    >
+                      See Live
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/juangalbea/Backend-Face_Recognition"
+                    >
+                      Backend
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/juangalbea/Face_Recognition"
+                    >
+                      Frontend
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="project-card load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://juangalbea.github.io/react-films/"
+                  target="_blank"
+                  class="project-card__media"
+                >
+                  <div class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="./assets/logofilms.png"
+                      alt="Screenshot of React Films"
+                    />
+                    <div class="project-card__overlay">
+                      <span class="project-card__overlay-cta">View Project</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="project-card__body">
                   <h3 class="project-wrapper__text-title">React Films</h3>
-                    <div>
-                      <p class="mb-4">
-                        React Films is a platform that lets users search for films and view detailed information from IMDB, including plot, rating, director, year, awards, and more. Simply search for a movie, click on it, and get all the details you need.
-                      </p>
-  
-                      <div class="features-list mb-4">
-                        <p><strong>Search for Films:</strong> Quickly search for any movie by title.</p>
-                        <p><strong>Film Details:</strong> View detailed information from IMDB, including ratings, plot, and more.</p>
-                        <p><strong>Seamless Navigation:</strong> Easy navigation between pages using React Router.</p>
-                        <p><strong>Technologies Used:</strong> <span class="tech-gradient">React, React-Router</span></p>
-                      </div>
-                    </div>
-                  <a target="_blank" class="cta-btn cta-btn--hero" href="https://juangalbea.github.io/react-films/">
-                    See Live
-                  </a>
-                  <a target="_blank" class="cta-btn text-color-main" href="https://github.com/juangalbea/react-films">
-                    Source Code
-                  </a>
+                  <p class="project-wrapper__summary">
+                    A movie search experience that helps users find titles
+                    quickly and explore key film details in a simple interface.
+                  </p>
+                  <p class="project-wrapper__stack">React, React Router</p>
+                  <div class="project-wrapper__links">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn cta-btn--hero"
+                      href="https://juangalbea.github.io/react-films/"
+                    >
+                      See Live
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/juangalbea/react-films"
+                    >
+                      Source Code
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="project-wrapper__image">
-                  <a href="https://juangalbea.github.io/react-films/" target="_blank">
-                    <div data-tilt class="thumbnail rounded">
-                      <img class="img-fluid" src="./assets/logofilms.png" />
-                    </div>
-                  </a>
-                </div>
-              </div>
+              </article>
             </div>
-            <!-- /END Project -->
-  
-            <!-- Each .row is a project -->
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <div class="project-wrapper__text">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <article class="project-card load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://juangalbea.github.io/vue_food_app"
+                  target="_blank"
+                  class="project-card__media"
+                >
+                  <div class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="./assets/logofoodies.png"
+                      alt="Screenshot of Vue Food App"
+                    />
+                    <div class="project-card__overlay">
+                      <span class="project-card__overlay-cta">View Project</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="project-card__body">
                   <h3 class="project-wrapper__text-title">Vue Food App</h3>
-                    <div>
-                      <p class="mb-4">
-                        Vue Food App is a food selection platform where users can browse a variety of delicious meals, search by category, and add their favorites to the cart. It's simple, intuitive, and perfect for food lovers.
-                      </p>
-  
-                      <div class="features-list mb-4">
-                        <p><strong>Browse Meals:</strong> Explore a wide range of meals and discover your favorites.</p>
-                        <p><strong>Category Search:</strong> Quickly find meals by selecting categories.</p>
-                        <p><strong>Easy Cart Management:</strong> Add meals to the cart and manage your selections effortlessly.</p>
-                        <p><strong>Technologies Used:</strong> <span class="tech-gradient">Vue, Vue-Router</span></p>
-                      </div>
-                    </div>
-  
-                  <a target="_blank" class="cta-btn cta-btn--hero" href="https://juangalbea.github.io/vue_food_app">
-                    See Live
-                  </a>
-                  <a target="_blank" class="cta-btn text-color-main" href="https://github.com/juangalbea/vue_food_app">
-                    Source Code
-                  </a>
+                  <p class="project-wrapper__summary">
+                    A food discovery app where users can browse meals by
+                    category and manage their selections through a clear
+                    purchase flow.
+                  </p>
+                  <p class="project-wrapper__stack">Vue, Vue Router</p>
+                  <div class="project-wrapper__links">
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn cta-btn--hero"
+                      href="https://juangalbea.github.io/vue_food_app"
+                    >
+                      See Live
+                    </a>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      class="cta-btn text-color-main"
+                      href="https://github.com/juangalbea/vue_food_app"
+                    >
+                      Source Code
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="project-wrapper__image">
-                  <a href="https://juangalbea.github.io/vue_food_app" target="_blank">
-                    <div data-tilt class="thumbnail rounded">
-                      <img class="img-fluid" src="./assets/logofoodies.png" />
-                    </div>
-                  </a>
-                </div>
-              </div>
+              </article>
             </div>
-            <!-- /END Project -->
-  
           </div>
         </div>
-      </section>
-      <!-- /END Projects Section -->
-
-   <!-- **** Contact Section **** -->
-   <section id="contact">
-    <div class="container">
-      <h2 class="section-title">
-        Contact
-      </h2>
-      <div class="contact-wrapper">
-        <p class="contact-wrapper__text">
-          Would you like to contact me?
-        </p>
-        <a
-          target="_blank"
-          class="cta-btn cta-btn--resume"
-          href="mailto:juangalbea@gmail.com"
-          >Get in Touch</a
-        >
       </div>
-    </div>
-  </section>
-  <!-- /END Contact Section -->
+    </section>
 
-    <!-- **** Footer Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            If you would like to collaborate, discuss an opportunity, or simply
+            say hello, I would be happy to hear from you.
+          </p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:juangalbea@gmail.com"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer navbar-static-bottom">
       <div class="container">
         <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <!-- <a href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a> -->
-          <a href="https://www.codewars.com/users/JuanAlbea" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.codewars.com/users/JuanAlbea"
+            target="_blank"
+            aria-label="Codewars"
+          >
             <i class="fa fa-code fa-inverse"></i>
           </a>
-          <a href="https://www.linkedin.com/in/juangarcia-albea/" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/juangarcia-albea/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="https://github.com/juangalbea" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/juangalbea"
+            target="_blank"
+            aria-label="GitHub"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+        <p class="footer__text">Juan Garcia-Albea</p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
   </body>

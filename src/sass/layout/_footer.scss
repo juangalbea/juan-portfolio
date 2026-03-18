@@ -10,6 +10,9 @@
   &__text {
     color: darken($white-color, 50%);
     font-size: 1.3rem;
+    margin-top: 1.6rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
 
     a {
       color: darken($white-color, 50%);
@@ -27,12 +30,6 @@
     }
   }
 
-  & hr {
-    margin: 1rem auto;
-    border: 0;
-    width: 50%;
-    border-top: 2px solid grey;
-  }
 }
 
 .social-links {

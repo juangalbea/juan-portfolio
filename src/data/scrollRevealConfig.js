@@ -16,7 +16,7 @@ export const targetElements = [
     },
   },
   {
-    element: ".hero-title",
+    element: ".hero-copy",
     animation: {
       delay: 500,
       origin: window.innerWidth > 768 ? "left" : "bottom",
@@ -25,7 +25,7 @@ export const targetElements = [
   {
     element: ".hero-cta",
     animation: {
-      delay: 1000,
+      delay: 800,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
@@ -44,17 +44,10 @@ export const targetElements = [
     },
   },
   {
-    element: ".project-wrapper__text",
+    element: ".project-card",
     animation: {
-      delay: 500,
-      origin: window.innerWidth > 768 ? "left" : "bottom",
-    },
-  },
-  {
-    element: ".project-wrapper__image",
-    animation: {
-      delay: 1000,
-      origin: window.innerWidth > 768 ? "right" : "bottom",
+      delay: 450,
+      origin: "bottom",
     },
   },
   {
